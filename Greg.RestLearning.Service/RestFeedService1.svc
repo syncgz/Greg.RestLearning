@@ -1,2 +1,2 @@
 ﻿<%@ ServiceHost Language="C#" Debug="true" Service="Greg.RestLearning.Service.RestFeedService1" 
-CodeBehind="RestFeedService1.svc.cs" Factory="System.ServiceModel.Activation.WebServiceHostFactory" %>
+CodeBehind="RestFeedService1.svc.cs" %>
