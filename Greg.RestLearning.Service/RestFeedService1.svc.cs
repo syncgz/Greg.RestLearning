@@ -26,11 +26,15 @@ namespace Greg.RestLearning.Service
         {
             SyndicationItem item = new SyndicationItem();
 
+            item.Title = new TextSyndicationContent("Feed informacyjny.");
             item.Authors.Add(new SyndicationPerson("email@gmail.com"));
             item.Content = new TextSyndicationContent("Feed extra superb information.");
             item.Id = Guid.NewGuid().ToString();
             item.LastUpdatedTime = DateTime.Now;
             item.PublishDate = DateTime.Now;
+            item.Links.Add(new SyndicationLink(new Uri("http://www.wp.pl")));
+            item.Links.Add(new SyndicationLink(new Uri("http://www.onet.pl")));
+            item.Links.Add(SyndicationLink.CreateAlternateLink(new Uri("http://www.wp.pl")));
 
             SyndicationFeed feed = new SyndicationFeed(new List<SyndicationItem>(){item});
             feed.Authors.Add(new SyndicationPerson("ciekawe.co.to.za.mail@gmail.com"));
