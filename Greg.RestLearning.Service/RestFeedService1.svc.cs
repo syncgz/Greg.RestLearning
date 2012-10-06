@@ -33,7 +33,8 @@ namespace Greg.RestLearning.Service
             item.PublishDate = DateTime.Now;
 
             SyndicationFeed feed = new SyndicationFeed(new List<SyndicationItem>(){item});
-
+            feed.Authors.Add(new SyndicationPerson("ciekawe.co.to.za.mail@gmail.com"));
+            feed.Generator = "Feed generator";
             return feed;
         }
 
