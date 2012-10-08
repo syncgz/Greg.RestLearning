@@ -9,6 +9,9 @@ namespace Greg.RestLearning.ServiceClient
     {
         static void Main(string[] args)
         {
+            ServiceReferenceClient client = new ServiceReferenceClient();
+
+            client.Foo();
         }
     }
 }
