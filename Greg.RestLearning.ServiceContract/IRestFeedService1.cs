@@ -5,6 +5,7 @@ using System.ServiceModel;
 using System.ServiceModel.Syndication;
 using System.ServiceModel.Web;
 using System.Text;
+using Greg.RestLearning.Common;
 
 namespace Greg.RestLearning.ServiceContracts
 {
@@ -22,5 +23,13 @@ namespace Greg.RestLearning.ServiceContracts
         [WebGet(UriTemplate = "test")]
         [OperationContract]
         string Test();
+
+        [WebGet(UriTemplate = "/text")]
+        [OperationContract]
+        string TextEndpoint();
+
+        [WebGet(UriTemplate = "/user")]
+        [OperationContract]
+        User UserEndpoint();
     }
 }

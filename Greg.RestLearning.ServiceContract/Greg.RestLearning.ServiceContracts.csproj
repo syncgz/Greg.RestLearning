@@ -46,6 +46,12 @@
     <Compile Include="ITestService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Greg.RestLearning.Common\Greg.RestLearning.Common.csproj">
+      <Project>{58536231-A4BA-4BFA-A076-8FC03EC71E60}</Project>
+      <Name>Greg.RestLearning.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

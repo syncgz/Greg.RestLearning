@@ -68,6 +68,10 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Greg.RestLearning.Common\Greg.RestLearning.Common.csproj">
+      <Project>{58536231-A4BA-4BFA-A076-8FC03EC71E60}</Project>
+      <Name>Greg.RestLearning.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Greg.RestLearning.ServiceContract\Greg.RestLearning.ServiceContracts.csproj">
       <Project>{3411DC3E-DB82-4A08-9C75-62663E96F6A6}</Project>
       <Name>Greg.RestLearning.ServiceContracts</Name>
@@ -79,7 +83,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>False</AutoAssignPort>
           <DevelopmentServerPort>100</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

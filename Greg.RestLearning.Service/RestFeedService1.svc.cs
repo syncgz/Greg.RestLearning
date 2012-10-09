@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ServiceModel.Syndication;
+using Greg.RestLearning.Common;
 using Greg.RestLearning.ServiceContracts;
 
 namespace Greg.RestLearning.Service
@@ -48,6 +49,16 @@ namespace Greg.RestLearning.Service
         public string Test()
         {
             return "Everything works fine!!!";
+        }
+
+        public string TextEndpoint()
+        {
+            return "Only text endpoint";
+        }
+
+        public User UserEndpoint()
+        {
+            return new User(){Id = 1,Name = "Name",Surname = "Surname"};
         }
     }
 }
